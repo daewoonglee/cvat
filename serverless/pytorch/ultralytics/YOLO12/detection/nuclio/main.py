@@ -11,7 +11,6 @@ def init_context(context):
     context.logger.info("Init context...  0%")
 
     # If you have a custom model file, set the model_path or use pretrained model
-    # Add yolov12 deteciton version files to serverless dd
     model_path = "your-custom-model.pt"
     if os.path.exists(model_path):
         context.logger.info(f"Loading custom model from {model_path}")
