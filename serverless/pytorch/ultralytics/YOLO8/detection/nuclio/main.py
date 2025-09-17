@@ -10,7 +10,7 @@ from ultralytics import YOLO
 def init_context(context):
     context.logger.info("Init context...  0%")
 
-    model_path = "yolov8n_detection_960.pt"
+    model_path = "yolov8n_detect_960.pt"
     if os.path.exists(model_path):
         context.logger.info(f"Loading custom model from {model_path}")
     else:
